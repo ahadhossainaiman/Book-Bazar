@@ -56,7 +56,7 @@ client.connect((err) => {
   //   client.close();
 });
 
-const uri1 = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.wirvw.mongodb.net/bookShopCheckOut?retryWrites=true&w=majority`;
+const uri1 = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.wirvw.mongodb.net/${process.env.DB_NAME1}?retryWrites=true&w=majority`;
 const client1 = new MongoClient(uri1, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
